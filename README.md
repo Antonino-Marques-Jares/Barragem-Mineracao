@@ -22,5 +22,8 @@ Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Sat
 **Autor:** 
 Antonino Marques Jares
 
+# Site de divulgação :
+https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/
+
 
 
