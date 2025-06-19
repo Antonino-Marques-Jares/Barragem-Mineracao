@@ -8,7 +8,7 @@ Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Sat
 - Baixar arquivo Barragens.csv de https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao
 - Atualizar o endereço onde salvou o projeto na variável **url** em barragens.ipynb (arquivo jupyter)
 - Executar todo o código o que cria Resumo.csv e minas.json
-- Após executar tudo substitua o no html garantindo um mapa atualizado.
+- Após executar tudo atualize o html com o json gerado.
 - Pode visualizar no Browser.
 
 **Fonte:**
