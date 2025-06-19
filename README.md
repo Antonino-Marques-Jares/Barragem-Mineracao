@@ -1,3 +1,5 @@
+![Barragens](https://github.com/Antonino-Marques-Jares/Barragem-Mineracao/blob/main/Barragem.jpg)
+
 # Barragens de Mineração no Brasil
 
 Neste infográfico vamos visualizar as barragens no Brasil.
