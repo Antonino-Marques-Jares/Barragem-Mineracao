@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Barragens no Brasil</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="icon" href="https://www.areadetrampo.com.br/wp-content/uploads/2024/12/blocolaranja-1-133x150.webp" sizes="32x32" />
     <style>
         #map { 
             height: 600px; 
@@ -96,12 +97,7 @@
             <p><b>Autor:</b> Antonino Marques Jares</p>
             <p><b>Informações das Barragens:</b> https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao</p>
             <p><b>Informação atualizada em :</b>19/06/2025</p>
-
-            <h3>Página de divulgação :</h3>
-            <p>https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/</p>
-
-             <h3>GitHub:</h3>
-            <p>https://github.com/Antonino-Marques-Jares/Barragem-Mineracao</p>
+            <p><b>Pagina de Publicação :</b></p>
         </div>
     </div>
 
@@ -192,6 +188,7 @@
             // Dados de exemplo (substitua pelo seu JSON real)
             const mockData = [
     {
+        "ID":3685,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -200,6 +197,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":3687,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -208,6 +206,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":5405,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"FERREIRA GOMES",
@@ -216,6 +215,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":5863,
         "MINA":"Mina do Queias",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -224,6 +224,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":5865,
         "MINA":"Mina do Queias",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -232,6 +233,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":5866,
         "MINA":"Mina do Queias",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -240,6 +242,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":7471,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"PEDRA BRANCA DO AMAPARI",
@@ -248,6 +251,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8179,
         "MINA":"Nome da mina não informado",
         "UF":"SE",
         "MUNICIPIO":"ROSÁRIO DO CATETE",
@@ -256,6 +260,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8180,
         "MINA":"Complexo Mínero-Químico de Taquari-Vassouras",
         "UF":"SE",
         "MUNICIPIO":"ROSÁRIO DO CATETE",
@@ -264,6 +269,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8181,
         "MINA":"Nome da mina não informado",
         "UF":"SE",
         "MUNICIPIO":"ROSÁRIO DO CATETE",
@@ -272,6 +278,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8182,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SANTALUZ",
@@ -280,6 +287,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8183,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SANTALUZ",
@@ -288,6 +296,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8184,
         "MINA":"Serra Norte",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -296,6 +305,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8185,
         "MINA":"Serra Norte",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -304,6 +314,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8186,
         "MINA":"Serra Norte",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -312,6 +323,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8187,
         "MINA":"Serra Norte",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -320,6 +332,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8188,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -328,6 +341,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8189,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -336,6 +350,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8190,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -344,6 +359,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8193,
         "MINA":"Manganês Azul",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -352,6 +368,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8194,
         "MINA":"Manganês Azul",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -360,6 +377,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8195,
         "MINA":"Unidade operacional de Catalão",
         "UF":"GO",
         "MUNICIPIO":"CATALÃO",
@@ -368,6 +386,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8196,
         "MINA":"Unidade de catalão",
         "UF":"GO",
         "MUNICIPIO":"CATALÃO",
@@ -376,6 +395,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8198,
         "MINA":"MINA FÁBRICA NOVA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -384,6 +404,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8199,
         "MINA":"MINA FÁBRICA NOVA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -392,6 +413,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8200,
         "MINA":"MINA ALEGRIA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -400,6 +422,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8204,
         "MINA":"Timbopeba",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -408,6 +431,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8206,
         "MINA":"Fazendão",
         "UF":"MG",
         "MUNICIPIO":"CATAS ALTAS",
@@ -416,6 +440,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8207,
         "MINA":"TIMBOPEBA",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -424,6 +449,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8209,
         "MINA":"ALEGRIA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -432,6 +458,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8210,
         "MINA":"Fazendão",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -440,6 +467,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8216,
         "MINA":"Mina de Mar Azul",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -448,6 +476,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8217,
         "MINA":"Mina de Mar Azul",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -456,6 +485,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8218,
         "MINA":"Mina da Bocaina",
         "UF":"MG",
         "MUNICIPIO":"ARCOS",
@@ -464,6 +494,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8219,
         "MINA":"Mina da Bocaina",
         "UF":"MG",
         "MUNICIPIO":"ARCOS",
@@ -472,6 +503,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8220,
         "MINA":"Mina Jangada",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -480,6 +512,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8249,
         "MINA":"Mina de Mar Azul",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -488,6 +521,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8253,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SANTALUZ",
@@ -496,6 +530,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8254,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SANTALUZ",
@@ -504,6 +539,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8255,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SANTALUZ",
@@ -512,6 +548,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8256,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -520,6 +557,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8262,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CARANAÍBA",
@@ -528,6 +566,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8267,
         "MINA":"Mina Fontanella",
         "UF":"SC",
         "MUNICIPIO":"TREVISO",
@@ -536,6 +575,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8268,
         "MINA":"Mina Fontanella",
         "UF":"SC",
         "MUNICIPIO":"TREVISO",
@@ -544,6 +584,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8269,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"OURILÂNDIA DO NORTE",
@@ -552,6 +593,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8271,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -560,6 +602,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8272,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -568,6 +611,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8276,
         "MINA":"Mina de Fábrica",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -576,6 +620,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8279,
         "MINA":"Mina de Fábrica",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -584,6 +629,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8280,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELO HORIZONTE",
@@ -592,6 +638,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8281,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -600,6 +647,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8282,
         "MINA":"Galinheiro",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -608,6 +656,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8283,
         "MINA":"Mina Fábrica ",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -616,6 +665,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8286,
         "MINA":"Mina de Fabrica",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -624,6 +674,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8287,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -632,6 +683,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8288,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -640,6 +692,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8289,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -648,6 +701,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8290,
         "MINA":"Mina de Fábrica",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -656,6 +710,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8291,
         "MINA":"Mineração Serra Grande SA",
         "UF":"GO",
         "MUNICIPIO":"CRIXÁS",
@@ -664,6 +719,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8292,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -672,6 +728,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8293,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -680,6 +737,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8294,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -688,6 +746,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8296,
         "MINA":"MINA FÁBRICA ",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -696,6 +755,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8299,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -704,6 +764,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8300,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"SIMÕES FILHO",
@@ -712,6 +773,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8301,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -720,6 +782,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8302,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -728,6 +791,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8303,
         "MINA":"Mina do Pico ",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -736,6 +800,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8304,
         "MINA":"Mina do Pico",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -744,6 +809,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8305,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELO VALE",
@@ -752,6 +818,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8307,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELO VALE",
@@ -760,6 +827,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8308,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -768,6 +836,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8311,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -776,6 +845,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8312,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -784,6 +854,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8313,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -792,6 +863,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8314,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -800,6 +872,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8315,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -808,6 +881,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8316,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -816,6 +890,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8317,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -824,6 +899,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8318,
         "MINA":"Mina Conceição",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -832,6 +908,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8320,
         "MINA":"Conceição",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -840,6 +917,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8325,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -848,6 +926,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8330,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -856,6 +935,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8332,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -864,6 +944,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8333,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -872,6 +953,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8335,
         "MINA":"Cauê",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -880,6 +962,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8337,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -888,6 +971,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8338,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -896,6 +980,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8344,
         "MINA":"Mina de Cajati",
         "UF":"SP",
         "MUNICIPIO":"CAJATI",
@@ -904,6 +989,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8345,
         "MINA":"Mina de Cajati",
         "UF":"SP",
         "MUNICIPIO":"CAJATI",
@@ -912,6 +998,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8346,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"BRUMADO",
@@ -920,6 +1007,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8347,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SANTOS",
@@ -928,6 +1016,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8350,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -936,6 +1025,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8351,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -944,6 +1034,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8352,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -952,6 +1043,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8358,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -960,6 +1052,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8359,
         "MINA":"Mina Conceição",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -968,6 +1061,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8363,
         "MINA":"Córrego do Meio",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -976,6 +1070,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8366,
         "MINA":"Brucutu",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -984,6 +1079,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8367,
         "MINA":"Pedreira Juruaçu",
         "UF":"SP",
         "MUNICIPIO":"SÃO PAULO",
@@ -992,6 +1088,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8368,
         "MINA":"Brucutu",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -1000,6 +1097,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8369,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"RIO PIRACICABA",
@@ -1008,6 +1106,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8370,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"RIO PIRACICABA",
@@ -1016,6 +1115,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8371,
         "MINA":"Pedreira Itapeti",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -1024,6 +1124,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8372,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -1032,6 +1133,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8373,
         "MINA":"Mina de Brucutu",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1040,6 +1142,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8374,
         "MINA":"Pedreira Itapeti",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -1048,6 +1151,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8375,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -1056,6 +1160,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8376,
         "MINA":"Mina de Brucutu",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -1064,6 +1169,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8379,
         "MINA":"Brucutu",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -1072,6 +1178,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8381,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1080,6 +1187,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8383,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1088,6 +1196,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8385,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1096,6 +1205,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8386,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1104,6 +1214,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8389,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1112,6 +1223,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8391,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"SIDERÓPOLIS",
@@ -1120,6 +1232,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8392,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1128,6 +1241,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8396,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1136,6 +1250,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8400,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -1144,6 +1259,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8403,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -1152,6 +1268,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8405,
         "MINA":"Mina de Capanema",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -1160,6 +1277,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8406,
         "MINA":"Del Rey",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -1168,6 +1286,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8407,
         "MINA":"Del Rey",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -1176,6 +1295,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8412,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"LAURO MÜLLER",
@@ -1184,6 +1304,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8414,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"IÇARA",
@@ -1192,6 +1313,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8421,
         "MINA":"Mina de Águas Claras",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -1200,6 +1322,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8422,
         "MINA":"Mina de Águas Claras",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -1208,6 +1331,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8428,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1216,6 +1340,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8429,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1224,6 +1349,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8430,
         "MINA":"Gongo Soco",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -1232,6 +1358,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8431,
         "MINA":"Mina Morrou do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1240,6 +1367,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8432,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1248,6 +1376,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8433,
         "MINA":"Mina Morro do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1256,6 +1385,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8434,
         "MINA":"Mina Morro do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1264,6 +1394,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8435,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -1272,6 +1403,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8436,
         "MINA":"Mina Morro do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1280,6 +1412,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8437,
         "MINA":"Mina Morro do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1288,6 +1421,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8438,
         "MINA":"Mina Morro do Ouro",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -1296,6 +1430,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8439,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1304,6 +1439,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8440,
         "MINA":"Projeto Antas Norte",
         "UF":"PA",
         "MUNICIPIO":"CURIONÓPOLIS",
@@ -1312,6 +1448,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8441,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1320,6 +1457,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8443,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1328,6 +1466,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8446,
         "MINA":"Complexo de Mineração de Tapira",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -1336,6 +1475,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8450,
         "MINA":"Unidade de Patos de Minas",
         "UF":"MG",
         "MUNICIPIO":"PATOS DE MINAS",
@@ -1344,6 +1484,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8451,
         "MINA":"Mina Córrego do Feijão",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1352,6 +1493,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8453,
         "MINA":"Mina Córrego do Feijão",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1360,6 +1502,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8454,
         "MINA":"Unidade de Patos de Minas",
         "UF":"MG",
         "MUNICIPIO":"PATOS DE MINAS",
@@ -1368,6 +1511,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8456,
         "MINA":"Mina Córrego do Feijão",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1376,6 +1520,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8457,
         "MINA":"Mina Córrego do Feijão",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1384,6 +1529,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8458,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1392,6 +1538,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8459,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1400,6 +1547,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8460,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1408,6 +1556,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8462,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PATOS DE MINAS",
@@ -1416,6 +1565,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8464,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1424,6 +1574,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8465,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1432,6 +1583,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8467,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PRADOS",
@@ -1440,6 +1592,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8471,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1448,6 +1601,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8472,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1456,6 +1610,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8475,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1464,6 +1619,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8476,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -1472,6 +1628,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8482,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -1480,6 +1637,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8489,
         "MINA":"MINA DA FAZ. RECREIO",
         "UF":"SP",
         "MUNICIPIO":"MONTE MOR",
@@ -1488,6 +1646,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8490,
         "MINA":"Mina Fazenda do Quebra",
         "UF":"MG",
         "MUNICIPIO":"BETIM",
@@ -1496,6 +1655,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8495,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1504,6 +1664,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8496,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1512,6 +1673,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8498,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1520,6 +1682,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8500,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1528,6 +1691,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8501,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1536,6 +1700,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8502,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1544,6 +1709,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8504,
         "MINA":"MINA OESTE",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1552,6 +1718,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8505,
         "MINA":"Mina de Casa Branca",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1560,6 +1727,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8506,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1568,6 +1736,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8507,
         "MINA":"Mina de Casa Branca",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1576,6 +1745,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8509,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1584,6 +1754,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8510,
         "MINA":"Mina de Casa Branca",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -1592,6 +1763,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8511,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -1600,6 +1772,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8513,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1608,6 +1781,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8514,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1616,6 +1790,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8515,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1624,6 +1799,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8516,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1632,6 +1808,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8517,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1640,6 +1817,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8519,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1648,6 +1826,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8520,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1656,6 +1835,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8521,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1664,6 +1844,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8522,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1672,6 +1853,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8523,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1680,6 +1862,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8525,
         "MINA":"Mina Da Mutuca",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -1688,6 +1871,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8526,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1696,6 +1880,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8527,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1704,6 +1889,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8528,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1712,6 +1898,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8529,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -1720,6 +1907,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8530,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1728,6 +1916,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8532,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1736,6 +1925,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8533,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1744,6 +1934,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8535,
         "MINA":"MINA OESTE",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -1752,6 +1943,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8537,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO SIMÃO",
@@ -1760,6 +1952,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8538,
         "MINA":"São Francisco",
         "UF":"MT",
         "MUNICIPIO":"VILA BELA DA SANTÍSSIMA TRINDADE",
@@ -1768,6 +1961,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8539,
         "MINA":"Mina Turmalina",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO PARÁ",
@@ -1776,6 +1970,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8540,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"CAIEIRAS",
@@ -1784,6 +1979,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8543,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -1792,6 +1988,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8546,
         "MINA":"Mineração do Vale",
         "UF":"SP",
         "MUNICIPIO":"CORUMBATAÍ",
@@ -1800,6 +1997,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8547,
         "MINA":"MINERAÇÃO AURIZONA",
         "UF":"MA",
         "MUNICIPIO":"GODOFREDO VIANA",
@@ -1808,6 +2006,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8548,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"TATUÍ",
@@ -1816,6 +2015,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8549,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -1824,6 +2024,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8550,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -1832,6 +2033,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8554,
         "MINA":"Santa Isabel",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -1840,6 +2042,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8555,
         "MINA":"Mina Roça Grande \/ Mina Pilar",
         "UF":"MG",
         "MUNICIPIO":"CAETÉ",
@@ -1848,6 +2051,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8557,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1856,6 +2060,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8559,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1864,6 +2069,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8560,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1872,6 +2078,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8561,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1880,6 +2087,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8562,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1888,6 +2096,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8563,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1896,6 +2105,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8564,
         "MINA":"Mina Casa de Pedra",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -1904,6 +2114,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8565,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1912,6 +2123,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8566,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1920,6 +2132,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8567,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1928,6 +2141,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8569,
         "MINA":"Mina de Quatis",
         "UF":"RJ",
         "MUNICIPIO":"QUATIS",
@@ -1936,6 +2150,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8574,
         "MINA":"Mina Casa de Pedra",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -1944,6 +2159,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8575,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1952,6 +2168,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8576,
         "MINA":"Mina Casa de Pedra",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -1960,6 +2177,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8577,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1968,6 +2186,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8578,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1976,6 +2195,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8579,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -1984,6 +2204,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8580,
         "MINA":"Mina Casa de Pedra",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -1992,6 +2213,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8581,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2000,6 +2222,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8588,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2008,6 +2231,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8590,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2016,6 +2240,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8595,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2024,6 +2249,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8596,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2032,6 +2258,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8597,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2040,6 +2267,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8598,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2048,6 +2276,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8599,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2056,6 +2285,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8600,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2064,6 +2294,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8601,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2072,6 +2303,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8602,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -2080,6 +2312,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8603,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -2088,6 +2321,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8606,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"DESCOBERTO",
@@ -2096,6 +2330,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8610,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"BOFETE",
@@ -2104,6 +2339,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8614,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SENADOR MODESTINO GONÇALVES",
@@ -2112,6 +2348,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8615,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -2120,6 +2357,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8616,
         "MINA":"Mina Casa de Pedra",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -2128,6 +2366,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8617,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SENADOR MODESTINO GONÇALVES",
@@ -2136,6 +2375,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8618,
         "MINA":"SALOBO",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -2144,6 +2384,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8619,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -2152,6 +2393,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8620,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -2160,6 +2402,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8621,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -2168,6 +2411,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8622,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRA",
@@ -2176,6 +2420,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8624,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SENADOR MODESTINO GONÇALVES",
@@ -2184,6 +2429,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8625,
         "MINA":"Mina do Morro",
         "UF":"PR",
         "MUNICIPIO":"CAMPO LARGO",
@@ -2192,6 +2438,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8626,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -2200,6 +2447,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8627,
         "MINA":"Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -2208,6 +2456,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8628,
         "MINA":"SALOBO ",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -2216,6 +2465,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8629,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -2224,6 +2474,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8631,
         "MINA":"Mina Morro do Felipe",
         "UF":"AP",
         "MUNICIPIO":"VITÓRIA DO JARI",
@@ -2232,6 +2483,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8637,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"VITÓRIA DO JARI",
@@ -2240,6 +2492,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8639,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"VITÓRIA DO JARI",
@@ -2248,6 +2501,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8643,
         "MINA":"Mina Morro do Felipe",
         "UF":"PA",
         "MUNICIPIO":"ALMEIRIM",
@@ -2256,6 +2510,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8662,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2264,6 +2519,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8663,
         "MINA":"Planta do Queiroz",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -2272,6 +2528,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8664,
         "MINA":"Córrego do Sítio",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -2280,6 +2537,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8667,
         "MINA":"Complexo Cuiabá-Lamego",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -2288,6 +2546,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8668,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2296,6 +2555,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8669,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"IRECÊ",
@@ -2304,6 +2564,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8671,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ALMEIRIM",
@@ -2312,6 +2573,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8673,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2320,6 +2582,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8674,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ALMEIRIM",
@@ -2328,6 +2591,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8675,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2336,6 +2600,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8676,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2344,6 +2609,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8677,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2352,6 +2618,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8678,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2360,6 +2627,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8679,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2368,6 +2636,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8681,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -2376,6 +2645,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8682,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -2384,6 +2654,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8683,
         "MINA":"Mina Retiro do Sapecado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -2392,6 +2663,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8684,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2400,6 +2672,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8685,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2408,6 +2681,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8686,
         "MINA":"Vermelhão",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -2416,6 +2690,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8688,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"RIO CRESPO",
@@ -2424,6 +2699,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8689,
         "MINA":"SALOBO",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -2432,6 +2708,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8690,
         "MINA":"Mina Casa de Pedra ",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -2440,6 +2717,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8693,
         "MINA":"Mina de Fernandinho",
         "UF":"MG",
         "MUNICIPIO":"RIO ACIMA",
@@ -2448,6 +2726,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8694,
         "MINA":"Mina de Fernandinho",
         "UF":"MG",
         "MUNICIPIO":"RIO ACIMA",
@@ -2456,6 +2735,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8695,
         "MINA":"Córrego do Sítio",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -2464,6 +2744,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8696,
         "MINA":"Mina de Fernandinho",
         "UF":"MG",
         "MUNICIPIO":"RIO ACIMA",
@@ -2472,6 +2753,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8699,
         "MINA":"Minas do Engenho Seco ",
         "UF":"MG",
         "MUNICIPIO":"SARZEDO",
@@ -2480,6 +2762,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8700,
         "MINA":"Planta Queiroz",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -2488,6 +2771,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8704,
         "MINA":"SALOBO ",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -2496,6 +2780,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8707,
         "MINA":"SALOBO ",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -2504,6 +2789,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8710,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -2512,6 +2798,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8721,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"VITÓRIA DA CONQUISTA",
@@ -2520,6 +2807,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8723,
         "MINA":"Campbell",
         "UF":"BA",
         "MUNICIPIO":"MARACÁS",
@@ -2528,6 +2816,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8724,
         "MINA":"Campbell",
         "UF":"BA",
         "MUNICIPIO":"MARACÁS",
@@ -2536,6 +2825,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8730,
         "MINA":"Unidade ITA4",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -2544,6 +2834,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8732,
         "MINA":"Mina Santa Rita",
         "UF":"BA",
         "MUNICIPIO":"ITAGIBÁ",
@@ -2552,6 +2843,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8734,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"ITAGIBÁ",
@@ -2560,6 +2852,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8741,
         "MINA":"Nome da mina não informado",
         "UF":"TO",
         "MUNICIPIO":"ARRAIAS",
@@ -2568,6 +2861,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8743,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ANTÔNIO DIAS",
@@ -2576,6 +2870,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8744,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"MAZAGÃO",
@@ -2584,6 +2879,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8747,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"AGUAÍ",
@@ -2592,6 +2888,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8748,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"AGUAÍ",
@@ -2600,6 +2897,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8751,
         "MINA":"Complexo Germano",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -2608,6 +2906,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8753,
         "MINA":"JACOBINA MINERAÇÃO E COMÉRCIO LTDA",
         "UF":"BA",
         "MUNICIPIO":"JACOBINA",
@@ -2616,6 +2915,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8757,
         "MINA":"JACOBINA MINERACAO E COMERCIO LTDA",
         "UF":"BA",
         "MUNICIPIO":"JACOBINA",
@@ -2624,6 +2924,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8758,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -2632,6 +2933,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8759,
         "MINA":"Unidade ITA4",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -2640,6 +2942,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8765,
         "MINA":"Complexo Germano",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -2648,6 +2951,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8771,
         "MINA":"Nome da mina não informado",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2656,6 +2960,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8773,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -2664,6 +2969,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8774,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2672,6 +2978,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8775,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2680,6 +2987,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8776,
         "MINA":"Complexo Germano",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -2688,6 +2996,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8777,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -2696,6 +3005,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8778,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2704,6 +3014,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8779,
         "MINA":"Mina de Pitinga",
         "UF":"AM",
         "MUNICIPIO":"PRESIDENTE FIGUEIREDO",
@@ -2712,6 +3023,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8780,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"BRUMADO",
@@ -2720,6 +3032,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8782,
         "MINA":"Ponto Verde",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -2728,6 +3041,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8786,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"ROSÁRIO OESTE",
@@ -2736,6 +3050,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8817,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SOROCABA",
@@ -2744,6 +3059,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8818,
         "MINA":"Mina de Cajati",
         "UF":"SP",
         "MUNICIPIO":"CAJATI",
@@ -2752,6 +3068,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8820,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"MAIQUINIQUE",
@@ -2760,6 +3077,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8821,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"MAIQUINIQUE",
@@ -2768,6 +3086,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8822,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"SIDERÓPOLIS",
@@ -2776,6 +3095,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8823,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"RIBEIRÃO BRANCO",
@@ -2784,6 +3104,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8826,
         "MINA":"Nome da mina não informado",
         "UF":"PB",
         "MUNICIPIO":"VÁRZEA",
@@ -2792,6 +3113,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8827,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"CAMPO NOVO DE RONDÔNIA",
@@ -2800,6 +3122,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8828,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"CAMPO NOVO DE RONDÔNIA",
@@ -2808,6 +3131,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8829,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -2816,6 +3140,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8830,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"SÃO FÉLIX DO XINGU",
@@ -2824,6 +3149,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8831,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"CUJUBIM",
@@ -2832,6 +3158,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8832,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"JARU",
@@ -2840,6 +3167,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8833,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"MINISTRO ANDREAZZA",
@@ -2848,6 +3176,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8834,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"MINISTRO ANDREAZZA",
@@ -2856,6 +3185,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8835,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"URUPÁ",
@@ -2864,6 +3194,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8836,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -2872,6 +3203,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8843,
         "MINA":"Ponto Verde",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -2880,6 +3212,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8855,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -2888,6 +3221,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8860,
         "MINA":"Mina Santana Céu Aberto ",
         "UF":"SC",
         "MUNICIPIO":"URUSSANGA",
@@ -2896,6 +3230,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8863,
         "MINA":"Mina de Viga",
         "UF":"MG",
         "MUNICIPIO":"JECEABA",
@@ -2904,6 +3239,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8870,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -2912,6 +3248,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8875,
         "MINA":"Mina Vazante",
         "UF":"MG",
         "MUNICIPIO":"VAZANTE",
@@ -2920,6 +3257,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8876,
         "MINA":"Mina de Vazante",
         "UF":"MG",
         "MUNICIPIO":"VAZANTE",
@@ -2928,6 +3266,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8877,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"JUÍNA",
@@ -2936,6 +3275,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8879,
         "MINA":"SÃO BENTO",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -2944,6 +3284,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8880,
         "MINA":"CMOC Brasil - Fosfato Ouvidor ",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -2952,6 +3293,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8899,
         "MINA":"Bom Jardim",
         "UF":"MG",
         "MUNICIPIO":"MIRAÍ",
@@ -2960,6 +3302,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8901,
         "MINA":"Mercês",
         "UF":"MG",
         "MUNICIPIO":"MERCÊS",
@@ -2968,6 +3311,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8902,
         "MINA":"Serra da Tumba",
         "UF":"MG",
         "MUNICIPIO":"INHAÚMA",
@@ -2976,6 +3320,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8905,
         "MINA":"Unidade ITA3",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -2984,6 +3329,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8907,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -2992,6 +3338,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8908,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -3000,6 +3347,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8909,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA XAVANTINA",
@@ -3008,6 +3356,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8910,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA XAVANTINA",
@@ -3016,6 +3365,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8911,
         "MINA":"Pau Branco",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3024,6 +3374,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8913,
         "MINA":"Pau Branco",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3032,6 +3383,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8914,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA XAVANTINA",
@@ -3040,6 +3392,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8915,
         "MINA":"Mina Pau Branco",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -3048,6 +3401,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8921,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"ITAPETININGA",
@@ -3056,6 +3410,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8922,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"ITAPETININGA",
@@ -3064,6 +3419,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8925,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SALTO DE PIRAPORA",
@@ -3072,6 +3428,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8926,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO PAULO",
@@ -3080,6 +3437,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8927,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SALTO DE PIRAPORA",
@@ -3088,6 +3446,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8929,
         "MINA":"Mina Serra do Sapo",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO MATO DENTRO",
@@ -3096,6 +3455,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8930,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"DIAMANTINA",
@@ -3104,6 +3464,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8931,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3112,6 +3473,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8934,
         "MINA":"Grupamento mineiro de Itapecerica",
         "UF":"MG",
         "MUNICIPIO":"ITAPECERICA",
@@ -3120,6 +3482,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8935,
         "MINA":"Grupamento mineiro de Itapecerica",
         "UF":"MG",
         "MUNICIPIO":"ITAPECERICA",
@@ -3128,6 +3491,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8936,
         "MINA":"Grupamento mineiro de Itapecerica",
         "UF":"MG",
         "MUNICIPIO":"ITAPECERICA",
@@ -3136,6 +3500,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8937,
         "MINA":"Grupamento mineiro de Salto da Divisa",
         "UF":"MG",
         "MUNICIPIO":"SALTO DA DIVISA",
@@ -3144,6 +3509,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8938,
         "MINA":"Grupamento mineiro de Pedra Azul",
         "UF":"MG",
         "MUNICIPIO":"PEDRA AZUL",
@@ -3152,6 +3518,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8939,
         "MINA":"Grupamento mineiro de Pedra Azul",
         "UF":"MG",
         "MUNICIPIO":"PEDRA AZUL",
@@ -3160,6 +3527,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8940,
         "MINA":"Mina Lagoa das Flores",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3168,6 +3536,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8941,
         "MINA":"Mina Lagoa das Flores",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3176,6 +3545,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8942,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -3184,6 +3554,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8943,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATEUS LEME",
@@ -3192,6 +3563,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8944,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3200,6 +3572,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8945,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3208,6 +3581,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8946,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3216,6 +3590,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8947,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3224,6 +3599,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8948,
         "MINA":"Unidade ITA5",
         "UF":"SP",
         "MUNICIPIO":"GUARAREMA",
@@ -3232,6 +3608,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8949,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -3240,6 +3617,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8950,
         "MINA":"Unidade ITA5",
         "UF":"SP",
         "MUNICIPIO":"GUARAREMA",
@@ -3248,6 +3626,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8951,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"ALAMBARI",
@@ -3256,6 +3635,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8953,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3264,6 +3644,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8954,
         "MINA":"Mina Serra do Sapo",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO MATO DENTRO",
@@ -3272,6 +3653,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8955,
         "MINA":"Serra Azul ",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3280,6 +3662,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":8956,
         "MINA":"Estação de Bombeamento 2",
         "UF":"MG",
         "MUNICIPIO":"SANTO ANTÔNIO DO GRAMA",
@@ -3288,6 +3671,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8957,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3296,6 +3680,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8958,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3304,6 +3689,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8959,
         "MINA":"Nome da mina não informado",
         "UF":"RJ",
         "MUNICIPIO":"SÃO JOÃO DA BARRA",
@@ -3312,6 +3698,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8963,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -3320,6 +3707,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8972,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3328,6 +3716,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8975,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3336,6 +3725,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8976,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3344,6 +3734,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8977,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3352,6 +3743,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8978,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3360,6 +3752,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8980,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3368,6 +3761,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8981,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3376,6 +3770,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8982,
         "MINA":"Mina São Vicente",
         "UF":"MT",
         "MUNICIPIO":"NOVA LACERDA",
@@ -3384,6 +3779,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8983,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3392,6 +3788,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8984,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3400,6 +3797,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8985,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3408,6 +3806,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8988,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"MAZAGÃO",
@@ -3416,6 +3815,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8990,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -3424,6 +3824,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":8993,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"MAZAGÃO",
@@ -3432,6 +3833,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":8995,
         "MINA":"Nome da mina não informado",
         "UF":"PI",
         "MUNICIPIO":"SÃO LOURENÇO DO PIAUÍ",
@@ -3440,6 +3842,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9000,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"FORTALEZA DE MINAS",
@@ -3448,6 +3851,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9001,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -3456,6 +3860,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9005,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -3464,6 +3869,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9006,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA SANTA HELENA",
@@ -3472,6 +3878,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9007,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3480,6 +3887,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9008,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA SANTA HELENA",
@@ -3488,6 +3896,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9011,
         "MINA":"Nome da mina não informado",
         "UF":"TO",
         "MUNICIPIO":"MONTE DO CARMO",
@@ -3496,6 +3905,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9012,
         "MINA":"Mineração Bom Futuro",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3504,6 +3914,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9018,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3512,6 +3923,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9019,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"CALÇOENE",
@@ -3520,6 +3932,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9020,
         "MINA":"Esrnesto",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -3528,6 +3941,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9021,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"RIACHO DOS MACHADOS",
@@ -3536,6 +3950,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9022,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -3544,6 +3959,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9023,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3552,6 +3968,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9026,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"FORQUILHINHA",
@@ -3560,6 +3977,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9027,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"PILAR DE GOIÁS",
@@ -3568,6 +3986,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9029,
         "MINA":"Santa Bárbara",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -3576,6 +3995,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9030,
         "MINA":"Santa Bárbara",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -3584,6 +4004,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9031,
         "MINA":"Santa Bárbara",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -3592,6 +4013,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9032,
         "MINA":"Santa Bárbara",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -3600,6 +4022,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9034,
         "MINA":"MINERAÇÃO OURO BRANCO",
         "UF":"SP",
         "MUNICIPIO":"SALTO DE PIRAPORA",
@@ -3608,6 +4031,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9037,
         "MINA":"Mina Miguel Burnier",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -3616,6 +4040,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9040,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3624,6 +4049,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9042,
         "MINA":"Mina Miguel Burnier",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -3632,6 +4058,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9043,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3640,6 +4067,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9044,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3648,6 +4076,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9045,
         "MINA":"Mina Várzea do Lopes",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -3656,6 +4085,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9050,
         "MINA":"Mina Tucano",
         "UF":"AP",
         "MUNICIPIO":"PEDRA BRANCA DO AMAPARI",
@@ -3664,6 +4094,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9051,
         "MINA":"Mina Tucano",
         "UF":"AP",
         "MUNICIPIO":"PEDRA BRANCA DO AMAPARI",
@@ -3672,6 +4103,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9056,
         "MINA":"Unidade ITA10",
         "UF":"SP",
         "MUNICIPIO":"SANTA ISABEL",
@@ -3680,6 +4112,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9058,
         "MINA":"Unidade ITA10",
         "UF":"SP",
         "MUNICIPIO":"SANTA ISABEL",
@@ -3688,6 +4121,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9059,
         "MINA":"Unidade ITA10",
         "UF":"SP",
         "MUNICIPIO":"SANTA ISABEL",
@@ -3696,6 +4130,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9060,
         "MINA":"Unidade ITA10",
         "UF":"SP",
         "MUNICIPIO":"SANTA ISABEL",
@@ -3704,6 +4139,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9062,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3712,6 +4148,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9063,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3720,6 +4157,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9064,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3728,6 +4166,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9065,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3736,6 +4175,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9067,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3744,6 +4184,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9068,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3752,6 +4193,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9069,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3760,6 +4202,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9070,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3768,6 +4211,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9073,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -3776,6 +4220,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9074,
         "MINA":"Mina PPSA",
         "UF":"PA",
         "MUNICIPIO":"IPIXUNA DO PARÁ",
@@ -3784,6 +4229,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9075,
         "MINA":"Mina PPSA",
         "UF":"PA",
         "MUNICIPIO":"IPIXUNA DO PARÁ",
@@ -3792,6 +4238,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9077,
         "MINA":"Mina PPSA",
         "UF":"PA",
         "MUNICIPIO":"IPIXUNA DO PARÁ",
@@ -3800,6 +4247,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9080,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"VILHENA",
@@ -3808,6 +4256,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9081,
         "MINA":"Nome da mina não informado",
         "UF":"RS",
         "MUNICIPIO":"NOVA PETRÓPOLIS",
@@ -3816,6 +4265,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9083,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"VILHENA",
@@ -3824,6 +4274,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9091,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3832,6 +4283,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9092,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3840,6 +4292,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9093,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3848,6 +4301,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9094,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3856,6 +4310,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9095,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3864,6 +4319,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9096,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3872,6 +4328,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9097,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BELA VISTA DE MINAS",
@@ -3880,6 +4337,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9098,
         "MINA":"Tamanduá",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3888,6 +4346,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9099,
         "MINA":"Horizontes",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3896,6 +4355,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9100,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3904,6 +4364,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9101,
         "MINA":"Horizontes",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3912,6 +4373,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9103,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3920,6 +4382,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9104,
         "MINA":"Abóboras",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3928,6 +4391,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9105,
         "MINA":"Horizontes",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -3936,6 +4400,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9110,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"RIO CRESPO",
@@ -3944,6 +4409,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9111,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"VILHENA",
@@ -3952,6 +4418,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9113,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -3960,6 +4427,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9114,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITAÚNA",
@@ -3968,6 +4436,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9120,
         "MINA":"Mina do Recreio",
         "UF":"RS",
         "MUNICIPIO":"BUTIÁ",
@@ -3976,6 +4445,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9121,
         "MINA":"Mina do Cerro",
         "UF":"RS",
         "MUNICIPIO":"CACHOEIRA DO SUL",
@@ -3984,6 +4454,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9122,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -3992,6 +4463,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9124,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"CALÇOENE",
@@ -4000,6 +4472,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9125,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAGOMINAS",
@@ -4008,6 +4481,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9127,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAGOMINAS",
@@ -4016,6 +4490,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9128,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAGOMINAS",
@@ -4024,6 +4499,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9129,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"ANDORINHA",
@@ -4032,6 +4508,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9130,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"ANDORINHA",
@@ -4040,6 +4517,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9131,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"ANDORINHA",
@@ -4048,6 +4526,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9134,
         "MINA":"Ferro + Mineração S. A.",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -4056,6 +4535,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9135,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -4064,6 +4544,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9136,
         "MINA":"Mina do Sossego",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4072,6 +4553,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9137,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4080,6 +4562,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9138,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4088,6 +4571,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9139,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4096,6 +4580,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9140,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4104,6 +4589,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9141,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4112,6 +4598,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9143,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CANAÃ DOS CARAJÁS",
@@ -4120,6 +4607,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9144,
         "MINA":"Descalvado",
         "UF":"SP",
         "MUNICIPIO":"DESCALVADO",
@@ -4128,6 +4616,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9145,
         "MINA":"Descalvado",
         "UF":"SP",
         "MUNICIPIO":"DESCALVADO",
@@ -4136,6 +4625,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9146,
         "MINA":"Analândia",
         "UF":"SP",
         "MUNICIPIO":"ANALÂNDIA",
@@ -4144,6 +4634,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9147,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"ALTO HORIZONTE",
@@ -4152,6 +4643,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9148,
         "MINA":"Bom Futuro",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4160,6 +4652,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9149,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4168,6 +4661,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9150,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4176,6 +4670,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9151,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4184,6 +4679,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9152,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4192,6 +4688,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9153,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"VILHENA",
@@ -4200,6 +4697,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9154,
         "MINA":"Leão I",
         "UF":"RS",
         "MUNICIPIO":"MINAS DO LEÃO",
@@ -4208,6 +4706,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9155,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"VILHENA",
@@ -4216,6 +4715,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9156,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -4224,6 +4724,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9157,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -4232,6 +4733,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9158,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -4240,6 +4742,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9164,
         "MINA":"Nome da mina não informado",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4248,6 +4751,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9168,
         "MINA":"Mina Santa Cruz",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4256,6 +4760,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9170,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -4264,6 +4769,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9171,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -4272,6 +4778,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9172,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -4280,6 +4787,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9173,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"RIO BRANCO",
@@ -4288,6 +4796,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9181,
         "MINA":"Mina de Monjolinho",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4296,6 +4805,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9183,
         "MINA":"Mina de Monjolinho",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4304,6 +4814,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9186,
         "MINA":"Mina Lais",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4312,6 +4823,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9187,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"BARROCAS",
@@ -4320,6 +4832,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9188,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"BARROCAS",
@@ -4328,6 +4841,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9189,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"BARROCAS",
@@ -4336,6 +4850,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9197,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAGOMINAS",
@@ -4344,6 +4859,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9212,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"SÃO LUÍS DE MONTES BELOS",
@@ -4352,6 +4868,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9214,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -4360,6 +4877,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9216,
         "MINA":"UNIDADE MINERADORA DE LAGAMAR (UML)",
         "UF":"MG",
         "MUNICIPIO":"LAGAMAR",
@@ -4368,6 +4886,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9218,
         "MINA":"DIBASE HORTOLANDIA",
         "UF":"SP",
         "MUNICIPIO":"HORTOLÂNDIA",
@@ -4376,6 +4895,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9219,
         "MINA":"Unidade ITA13",
         "UF":"SP",
         "MUNICIPIO":"BOFETE",
@@ -4384,6 +4904,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9220,
         "MINA":"Unidade ITA13",
         "UF":"SP",
         "MUNICIPIO":"BOFETE",
@@ -4392,6 +4913,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9226,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"CARAGUATATUBA",
@@ -4400,6 +4922,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9227,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"CAMPO FORMOSO",
@@ -4408,6 +4931,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9228,
         "MINA":"Mina Pedrinhas",
         "UF":"BA",
         "MUNICIPIO":"CAMPO FORMOSO",
@@ -4416,6 +4940,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9229,
         "MINA":"Nome da mina não informado",
         "UF":"MA",
         "MUNICIPIO":"CODÓ",
@@ -4424,6 +4949,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9233,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"CAPIVARI",
@@ -4432,6 +4958,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9235,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4440,6 +4967,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9236,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4448,6 +4976,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9237,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO PAULO",
@@ -4456,6 +4985,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9238,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO PAULO",
@@ -4464,6 +4994,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9239,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO SIMÃO",
@@ -4472,6 +5003,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9240,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -4480,6 +5012,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9242,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"MOGI DAS CRUZES",
@@ -4488,6 +5021,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9244,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"BOFETE",
@@ -4496,6 +5030,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9246,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -4504,6 +5039,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9248,
         "MINA":"Mato Preto 2",
         "UF":"PR",
         "MUNICIPIO":"CERRO AZUL",
@@ -4512,6 +5048,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9249,
         "MINA":"Mato Preto !",
         "UF":"PR",
         "MUNICIPIO":"CERRO AZUL",
@@ -4520,6 +5057,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9250,
         "MINA":"São Francisco",
         "UF":"MT",
         "MUNICIPIO":"VILA BELA DA SANTÍSSIMA TRINDADE",
@@ -4528,6 +5066,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9251,
         "MINA":"São Francisco",
         "UF":"MT",
         "MUNICIPIO":"VILA BELA DA SANTÍSSIMA TRINDADE",
@@ -4536,6 +5075,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9252,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"SÃO LUÍS DE MONTES BELOS",
@@ -4544,6 +5084,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9258,
         "MINA":"Mina Santa Felicidade",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -4552,6 +5093,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9259,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -4560,6 +5102,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9261,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -4568,6 +5111,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9262,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -4576,6 +5120,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9263,
         "MINA":"CMISS",
         "UF":"MG",
         "MUNICIPIO":"SERRA DO SALITRE",
@@ -4584,6 +5129,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9266,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -4592,6 +5138,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9267,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -4600,6 +5147,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9268,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PARACATU",
@@ -4608,6 +5156,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9269,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MIRAÍ",
@@ -4616,6 +5165,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9270,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITAMARATI DE MINAS",
@@ -4624,6 +5174,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9272,
         "MINA":"Nome da mina não informado",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -4632,6 +5183,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9273,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -4640,6 +5192,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9274,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -4648,6 +5201,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9275,
         "MINA":"Mina de Bauxita da Alcoa Juruti",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -4656,6 +5210,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9276,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -4664,6 +5219,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9277,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -4672,6 +5228,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9278,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -4680,6 +5237,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9279,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -4688,6 +5246,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9280,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MATIPÓ",
@@ -4696,6 +5255,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9281,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -4704,6 +5264,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9282,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -4712,6 +5273,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9286,
         "MINA":"Complexo de Germano",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -4720,6 +5282,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9287,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -4728,6 +5291,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9288,
         "MINA":"Analândia",
         "UF":"SP",
         "MUNICIPIO":"ANALÂNDIA",
@@ -4736,6 +5300,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9289,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -4744,6 +5309,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9291,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BETIM",
@@ -4752,6 +5318,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9292,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BETIM",
@@ -4760,6 +5327,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9295,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITUTINGA",
@@ -4768,6 +5336,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9296,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -4776,6 +5345,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9297,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -4784,6 +5354,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9298,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITUTINGA",
@@ -4792,6 +5363,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9299,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITUTINGA",
@@ -4800,6 +5372,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9301,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITAÚNA",
@@ -4808,6 +5381,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9302,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITAÚNA",
@@ -4816,6 +5390,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9304,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -4824,6 +5399,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9305,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CATAS ALTAS",
@@ -4832,6 +5408,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9306,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -4840,6 +5417,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9307,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -4848,6 +5426,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9317,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -4856,6 +5435,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9319,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"IGARAPÉ",
@@ -4864,6 +5444,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9320,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"IGARAPÉ",
@@ -4872,6 +5453,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9321,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -4880,6 +5462,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9324,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -4888,6 +5471,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9326,
         "MINA":"Mina Manganês do Azul",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -4896,6 +5480,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9327,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4904,6 +5489,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9328,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4912,6 +5498,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9329,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4920,6 +5507,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9330,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4928,6 +5516,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9331,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4936,6 +5525,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9332,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4944,6 +5534,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9333,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4952,6 +5543,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9334,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4960,6 +5552,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9335,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4968,6 +5561,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9337,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4976,6 +5570,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9338,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4984,6 +5579,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9339,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -4992,6 +5588,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9340,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5000,6 +5597,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9341,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5008,6 +5606,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9342,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5016,6 +5615,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9343,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5024,6 +5624,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9344,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5032,6 +5633,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9345,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5040,6 +5642,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9346,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5048,6 +5651,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9348,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"LAGAMAR",
@@ -5056,6 +5660,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9351,
         "MINA":"Mina Lais",
         "UF":"MS",
         "MUNICIPIO":"CORUMBÁ",
@@ -5064,6 +5669,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9352,
         "MINA":"Mina de Piçarrão (desativada)",
         "UF":"MG",
         "MUNICIPIO":"NOVA ERA",
@@ -5072,6 +5678,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9353,
         "MINA":"Mina Capão do Lana",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -5080,6 +5687,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9355,
         "MINA":"Mina de Buritirama",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -5088,6 +5696,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9357,
         "MINA":"Mina Volta Grande",
         "UF":"MG",
         "MUNICIPIO":"SÃO TIAGO",
@@ -5096,6 +5705,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9358,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CURIONÓPOLIS",
@@ -5104,6 +5714,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9359,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CURIONÓPOLIS",
@@ -5112,6 +5723,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9360,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -5120,6 +5732,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9361,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -5128,6 +5741,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9363,
         "MINA":"MINA VAU NOVO",
         "UF":"SP",
         "MUNICIPIO":"SANTANA DE PARNAÍBA",
@@ -5136,6 +5750,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9364,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"DESCALVADO",
@@ -5144,6 +5759,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9369,
         "MINA":"Mina do Barreiro",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -5152,6 +5768,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9370,
         "MINA":"Mina de Catalão",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -5160,6 +5777,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9371,
         "MINA":"Mina de Catalão",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -5168,6 +5786,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9372,
         "MINA":"Mina de Catalão",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -5176,6 +5795,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9374,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"LEME",
@@ -5184,6 +5804,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9376,
         "MINA":"Garimpo do Serginho",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5192,6 +5813,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9378,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"IBIÚNA",
@@ -5200,6 +5822,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9383,
         "MINA":"Campbell",
         "UF":"BA",
         "MUNICIPIO":"MARACÁS",
@@ -5208,6 +5831,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9386,
         "MINA":"MINA ALEGRIA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -5216,6 +5840,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9390,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"PATROCÍNIO",
@@ -5224,6 +5849,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9393,
         "MINA":"Geominas minerações ltda",
         "UF":"TO",
         "MUNICIPIO":"NATIVIDADE",
@@ -5232,6 +5858,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9400,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5240,6 +5867,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9401,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5248,6 +5876,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9404,
         "MINA":"Galinheiro",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -5256,6 +5885,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9405,
         "MINA":"Galinheiro",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -5264,6 +5894,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9406,
         "MINA":"Geominas Minerações Ltda",
         "UF":"TO",
         "MUNICIPIO":"NATIVIDADE",
@@ -5272,6 +5903,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9407,
         "MINA":"Geominas Minerações Ltda",
         "UF":"TO",
         "MUNICIPIO":"NATIVIDADE",
@@ -5280,6 +5912,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9412,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"IBIÚNA",
@@ -5288,6 +5921,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9414,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5296,6 +5930,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9417,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -5304,6 +5939,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9420,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5312,6 +5948,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9423,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5320,6 +5957,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9425,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5328,6 +5966,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9426,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5336,6 +5975,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9427,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5344,6 +5984,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9428,
         "MINA":"Esperança",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5352,6 +5993,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9430,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ANTÔNIO DIAS",
@@ -5360,6 +6002,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9431,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ANTÔNIO DIAS",
@@ -5368,6 +6011,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9432,
         "MINA":"Nome da mina não informado",
         "UF":"TO",
         "MUNICIPIO":"NATIVIDADE",
@@ -5376,6 +6020,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9433,
         "MINA":"Mina Serra do Sapo",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO MATO DENTRO",
@@ -5384,6 +6029,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9434,
         "MINA":"Mina Serra do Sapo",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO MATO DENTRO",
@@ -5392,6 +6038,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9437,
         "MINA":"Mina do Pico",
         "UF":"MG",
         "MUNICIPIO":"ITABIRITO",
@@ -5400,6 +6047,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9439,
         "MINA":"Nome da mina não informado",
         "UF":"RS",
         "MUNICIPIO":"CAÇAPAVA DO SUL",
@@ -5408,6 +6056,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9440,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5416,6 +6065,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9441,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5424,6 +6074,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9442,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5432,6 +6083,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9446,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -5440,6 +6092,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9447,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SÃO GONÇALO DO RIO ABAIXO",
@@ -5448,6 +6101,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9449,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5456,6 +6110,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9450,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5464,6 +6119,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9451,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5472,6 +6128,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9452,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5480,6 +6137,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9453,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5488,6 +6146,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9454,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5496,6 +6155,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9455,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5504,6 +6164,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9457,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -5512,6 +6173,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9459,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5520,6 +6182,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9460,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5528,6 +6191,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9461,
         "MINA":"Mina Santa Felicidade",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5536,6 +6200,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9462,
         "MINA":"Garimpo Santa Maria",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5544,6 +6209,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9464,
         "MINA":"Mina de Bauxita da Alcoa Juruti",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -5552,6 +6218,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9465,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5560,6 +6227,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9468,
         "MINA":"Serra da Tumba",
         "UF":"MG",
         "MUNICIPIO":"INHAÚMA",
@@ -5568,6 +6236,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9470,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5576,6 +6245,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9471,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -5584,6 +6254,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9474,
         "MINA":"Torto",
         "UF":"MG",
         "MUNICIPIO":"BARÃO DE COCAIS",
@@ -5592,6 +6263,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9477,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ARAXÁ",
@@ -5600,6 +6272,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9480,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -5608,6 +6281,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9481,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -5616,6 +6290,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9482,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -5624,6 +6299,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9483,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ITAPUÃ DO OESTE",
@@ -5632,6 +6308,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9492,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5640,6 +6317,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9493,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5648,6 +6326,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9494,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5656,6 +6335,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9496,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5664,6 +6344,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9497,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5672,6 +6353,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9498,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5680,6 +6362,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9499,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5688,6 +6371,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9500,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -5696,6 +6380,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9505,
         "MINA":"Mina de Bauxita da Alcoa Juruti",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -5704,6 +6389,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9506,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5712,6 +6398,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9512,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5720,6 +6407,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9513,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5728,6 +6416,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9514,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -5736,6 +6425,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9532,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"RIO PIRACICABA",
@@ -5744,6 +6434,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9533,
         "MINA":"Água Limpa",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -5752,6 +6443,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9534,
         "MINA":"MINA ALEGRIA",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -5760,6 +6452,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9535,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"ITAPETININGA",
@@ -5768,6 +6461,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9537,
         "MINA":"Mina do Brumado",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -5776,6 +6470,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9540,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"MACHADINHO D'OESTE",
@@ -5784,6 +6479,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9545,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -5792,6 +6488,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9547,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5800,6 +6497,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9548,
         "MINA":"Mina Santa Felicidade",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5808,6 +6506,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9551,
         "MINA":"Berion",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -5816,6 +6515,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9552,
         "MINA":"Helvio",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -5824,6 +6524,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9553,
         "MINA":"Helvio",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -5832,6 +6533,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9559,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5840,6 +6542,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9560,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5848,6 +6551,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9561,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -5856,6 +6560,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9564,
         "MINA":"Mina Fontanella",
         "UF":"SC",
         "MUNICIPIO":"TREVISO",
@@ -5864,6 +6569,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9565,
         "MINA":"Mina Fontanella",
         "UF":"SC",
         "MUNICIPIO":"TREVISO",
@@ -5872,6 +6578,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9575,
         "MINA":"Mina Santa Felicidade",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -5880,6 +6587,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9576,
         "MINA":"ESTÂNCIA SESMARIA",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5888,6 +6596,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9578,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA SANTA HELENA",
@@ -5896,6 +6605,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9581,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"LAURO MÜLLER",
@@ -5904,6 +6614,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9582,
         "MINA":"Nome da mina não informado",
         "UF":"SC",
         "MUNICIPIO":"URUSSANGA",
@@ -5912,6 +6623,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9585,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5920,6 +6632,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9586,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA SANTA HELENA",
@@ -5928,6 +6641,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9605,
         "MINA":"Mina Tucano",
         "UF":"AP",
         "MUNICIPIO":"PEDRA BRANCA DO AMAPARI",
@@ -5936,6 +6650,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9611,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -5944,6 +6659,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9624,
         "MINA":"Mina Moriá",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -5952,6 +6668,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9626,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"ROSÁRIO OESTE",
@@ -5960,6 +6677,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9629,
         "MINA":"Mina de Águas Claras",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -5968,6 +6686,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9630,
         "MINA":"Mina de Águas Claras",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -5976,6 +6695,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9631,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"NOVA LIMA",
@@ -5984,6 +6704,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9632,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -5992,6 +6713,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9633,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CATAS ALTAS",
@@ -6000,6 +6722,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9634,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CATAS ALTAS",
@@ -6008,6 +6731,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9637,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CATAS ALTAS",
@@ -6016,6 +6740,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9639,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PARANAÍTA",
@@ -6024,6 +6749,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9640,
         "MINA":"Mina de Bauxita da Alcoa Juruti",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -6032,6 +6758,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9644,
         "MINA":"Mina Brasão",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6040,6 +6767,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9648,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -6048,6 +6776,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9649,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"RIO CRESPO",
@@ -6056,6 +6785,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9650,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CURIONÓPOLIS",
@@ -6064,6 +6794,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9651,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6072,6 +6803,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9655,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6080,6 +6812,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9656,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6088,6 +6821,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9659,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6096,6 +6830,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9660,
         "MINA":"Mina Serrote",
         "UF":"AL",
         "MUNICIPIO":"CRAÍBAS",
@@ -6104,6 +6839,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9661,
         "MINA":"Mina Totonho",
         "UF":"MG",
         "MUNICIPIO":"SÃO TIAGO",
@@ -6112,6 +6848,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9662,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6120,6 +6857,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9663,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6128,6 +6866,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9664,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6136,6 +6875,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9667,
         "MINA":"MINA NORMA ",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6144,6 +6884,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9670,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6152,6 +6893,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9676,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"ARIPUANÃ",
@@ -6160,6 +6902,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9678,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SARZEDO",
@@ -6168,6 +6911,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9679,
         "MINA":"Esperança",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6176,6 +6920,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9680,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6184,6 +6929,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9684,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6192,6 +6938,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9686,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"RIO CRESPO",
@@ -6200,6 +6947,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9687,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PARANAÍTA",
@@ -6208,6 +6956,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9692,
         "MINA":"Nome da mina não informado",
         "UF":"RO",
         "MUNICIPIO":"ARIQUEMES",
@@ -6216,6 +6965,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9693,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -6224,6 +6974,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9705,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6232,6 +6983,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9706,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6240,6 +6992,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9707,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6248,6 +7001,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9709,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6256,6 +7010,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9711,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"CALÇOENE",
@@ -6264,6 +7019,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9717,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"VILA BELA DA SANTÍSSIMA TRINDADE",
@@ -6272,6 +7028,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9728,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6280,6 +7037,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9730,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6288,6 +7046,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9731,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6296,6 +7055,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9732,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6304,6 +7064,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9733,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6312,6 +7073,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9741,
         "MINA":"Mina RCC",
         "UF":"PA",
         "MUNICIPIO":"BARCARENA",
@@ -6320,6 +7082,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9747,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6328,6 +7091,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9750,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6336,6 +7100,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9752,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6344,6 +7109,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9765,
         "MINA":"Mina de Buritirama",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -6352,6 +7118,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9772,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6360,6 +7127,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9773,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6368,6 +7136,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9775,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"JUÍNA",
@@ -6376,6 +7145,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9776,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6384,6 +7154,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9780,
         "MINA":"Mina de Buritirama",
         "UF":"PA",
         "MUNICIPIO":"MARABÁ",
@@ -6392,6 +7163,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9782,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6400,6 +7172,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9783,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6408,6 +7181,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9784,
         "MINA":"SÃO BENTO",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6416,6 +7190,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9785,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6424,6 +7199,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9793,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6432,6 +7208,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9799,
         "MINA":"Mina de Fabrica ",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -6440,6 +7217,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9800,
         "MINA":"Mina do Queias",
         "UF":"MG",
         "MUNICIPIO":"BRUMADINHO",
@@ -6448,6 +7226,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9801,
         "MINA":"Nome da mina não informado",
         "UF":"TO",
         "MUNICIPIO":"ALMAS",
@@ -6456,6 +7235,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9803,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6464,6 +7244,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9806,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6472,6 +7253,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9807,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6480,6 +7262,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9810,
         "MINA":"Água Branca ",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -6488,6 +7271,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9811,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -6496,6 +7280,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9814,
         "MINA":"Água Branca ",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -6504,6 +7289,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9815,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6512,6 +7298,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9816,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6520,6 +7307,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9818,
         "MINA":"Mina Serra do Sapo",
         "UF":"MG",
         "MUNICIPIO":"CONCEIÇÃO DO MATO DENTRO",
@@ -6528,6 +7316,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9823,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6536,6 +7325,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9824,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"JAGUARARI",
@@ -6544,6 +7334,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9826,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JACAREACANGA",
@@ -6552,6 +7343,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9832,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"PORTO GRANDE",
@@ -6560,6 +7352,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9833,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"PORTO GRANDE",
@@ -6568,6 +7361,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9834,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"PORTO GRANDE",
@@ -6576,6 +7370,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9835,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"PORTO GRANDE",
@@ -6584,6 +7379,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9836,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6592,6 +7388,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9837,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6600,6 +7397,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9840,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"SÃO JOSÉ DOS QUATRO MARCOS",
@@ -6608,6 +7406,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9844,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6616,6 +7415,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9845,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -6624,6 +7424,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9847,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"JURUTI",
@@ -6632,6 +7433,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9849,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6640,6 +7442,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9854,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6648,6 +7451,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9876,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"VÁRZEA GRANDE",
@@ -6656,6 +7460,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9896,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA BANDEIRANTES",
@@ -6664,6 +7469,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9897,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6672,6 +7478,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9911,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA BANDEIRANTES",
@@ -6680,6 +7487,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9916,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ESMERALDAS",
@@ -6688,6 +7496,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9919,
         "MINA":"Porto de areia Fl Jotas",
         "UF":"MG",
         "MUNICIPIO":"ESMERALDAS",
@@ -6696,6 +7505,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9921,
         "MINA":"Berion",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -6704,6 +7514,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9924,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"TATUÍ",
@@ -6712,6 +7523,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9925,
         "MINA":"Unidade ITA13",
         "UF":"SP",
         "MUNICIPIO":"BOFETE",
@@ -6720,6 +7532,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9929,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -6728,6 +7541,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9934,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6736,6 +7550,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9948,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"SANTO ANTÔNIO DE LEVERGER",
@@ -6744,6 +7559,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9973,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6752,6 +7568,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9980,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CARLINDA",
@@ -6760,6 +7577,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":9986,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"CURIONÓPOLIS",
@@ -6768,6 +7586,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9988,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"MAIQUINIQUE",
@@ -6776,6 +7595,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":9990,
         "MINA":"Mina de Fábrica",
         "UF":"MG",
         "MUNICIPIO":"CONGONHAS",
@@ -6784,6 +7604,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":9994,
         "MINA":"Mina Vazante",
         "UF":"MG",
         "MUNICIPIO":"VAZANTE",
@@ -6792,6 +7613,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10007,
         "MINA":"Cava paiol",
         "UF":"TO",
         "MUNICIPIO":"ALMAS",
@@ -6800,6 +7622,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10010,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOVA LACERDA",
@@ -6808,6 +7631,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10013,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"ITATIAIUÇU",
@@ -6816,6 +7640,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10014,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"VÁRZEA GRANDE",
@@ -6824,6 +7649,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10019,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -6832,6 +7658,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10020,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -6840,6 +7667,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10021,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -6848,6 +7676,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10022,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"UBERABA",
@@ -6856,6 +7685,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10030,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6864,6 +7694,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10033,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6872,6 +7703,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10039,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6880,6 +7712,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10041,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6888,6 +7721,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10045,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6896,6 +7730,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10049,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6904,6 +7739,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10054,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6912,6 +7748,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10058,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -6920,6 +7757,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10059,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -6928,6 +7766,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10060,
         "MINA":"Mina Sossego",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6936,6 +7775,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10066,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -6944,6 +7784,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10067,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -6952,6 +7793,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10073,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"MAIQUINIQUE",
@@ -6960,6 +7802,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10084,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6968,6 +7811,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10097,
         "MINA":"OURO FINO",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6976,6 +7820,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10099,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -6984,6 +7829,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10114,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -6992,6 +7838,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10117,
         "MINA":"MINA OSAMO UTSUMI",
         "UF":"MG",
         "MUNICIPIO":"CALDAS",
@@ -7000,6 +7847,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10118,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CALDAS",
@@ -7008,6 +7856,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10119,
         "MINA":"Mina do Engenho",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7016,6 +7865,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10120,
         "MINA":"Mina do Engenho",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7024,6 +7874,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10121,
         "MINA":"Mina do Engenho",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7032,6 +7883,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10122,
         "MINA":"Mina do Engenho",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7040,6 +7892,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10128,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7048,6 +7901,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10129,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7056,6 +7910,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10172,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"CALDAS",
@@ -7064,6 +7919,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10174,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SARZEDO",
@@ -7072,6 +7928,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10179,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7080,6 +7937,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10185,
         "MINA":"Nome da mina não informado",
         "UF":"MA",
         "MUNICIPIO":"GODOFREDO VIANA",
@@ -7088,6 +7946,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10188,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -7096,6 +7955,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10189,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SANTA BÁRBARA",
@@ -7104,6 +7964,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10193,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -7112,6 +7973,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10194,
         "MINA":"Mina Tocantinzinho",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -7120,6 +7982,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10195,
         "MINA":"Mina Tocantinzinho",
         "UF":"PA",
         "MUNICIPIO":"ITAITUBA",
@@ -7128,6 +7991,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10218,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7136,6 +8000,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10227,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -7144,6 +8009,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10228,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"ANALÂNDIA",
@@ -7152,6 +8018,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10232,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7160,6 +8027,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10233,
         "MINA":"Mina Pequi",
         "UF":"GO",
         "MUNICIPIO":"NIQUELÂNDIA",
@@ -7168,6 +8036,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10237,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"PARAUAPEBAS",
@@ -7176,6 +8045,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10241,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"CUIABÁ",
@@ -7184,6 +8054,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10245,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"CRIXÁS",
@@ -7192,6 +8063,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10247,
         "MINA":"Complexo Germano",
         "UF":"MG",
         "MUNICIPIO":"MARIANA",
@@ -7200,6 +8072,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10252,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -7208,6 +8081,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10253,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -7216,6 +8090,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10254,
         "MINA":"Nome da mina não informado",
         "UF":"PA",
         "MUNICIPIO":"ORIXIMINÁ",
@@ -7224,6 +8099,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10256,
         "MINA":"Campbell",
         "UF":"BA",
         "MUNICIPIO":"MARACÁS",
@@ -7232,6 +8108,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10260,
         "MINA":"Helvio",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -7240,6 +8117,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10267,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"NIQUELÂNDIA",
@@ -7248,6 +8126,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10269,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7256,6 +8135,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10272,
         "MINA":"Nome da mina não informado",
         "UF":"BA",
         "MUNICIPIO":"CAETITÉ",
@@ -7264,6 +8144,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10276,
         "MINA":"Mina de Catalão",
         "UF":"GO",
         "MUNICIPIO":"OUVIDOR",
@@ -7272,6 +8153,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10279,
         "MINA":"Nome da mina não informado",
         "UF":"MG",
         "MUNICIPIO":"TAPIRA",
@@ -7280,6 +8162,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10287,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"NIQUELÂNDIA",
@@ -7288,6 +8171,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10290,
         "MINA":"Nome da mina não informado",
         "UF":"RS",
         "MUNICIPIO":"SANTO ANTÔNIO DA PATRULHA",
@@ -7296,6 +8180,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10292,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7304,6 +8189,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10293,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7312,6 +8198,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10294,
         "MINA":"Nome da mina não informado",
         "UF":"SP",
         "MUNICIPIO":"SÃO BERNARDO DO CAMPO",
@@ -7320,6 +8207,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10296,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7328,6 +8216,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10308,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"PONTES E LACERDA",
@@ -7336,6 +8225,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10310,
         "MINA":"Aura Borborema",
         "UF":"RN",
         "MUNICIPIO":"CURRAIS NOVOS",
@@ -7344,6 +8234,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10314,
         "MINA":"Nome da mina não informado",
         "UF":"GO",
         "MUNICIPIO":"NIQUELÂNDIA",
@@ -7352,6 +8243,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10316,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7360,6 +8252,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10320,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7368,6 +8261,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10321,
         "MINA":"CHICO",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7376,6 +8270,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10322,
         "MINA":"Mineração Mutuca",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7384,6 +8279,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10335,
         "MINA":"Mina do Brumado",
         "UF":"MG",
         "MUNICIPIO":"SABARÁ",
@@ -7392,6 +8288,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10336,
         "MINA":"MINERAÇÃO MANAH",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7400,6 +8297,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10342,
         "MINA":"PM1 MINERAÇÃO",
         "UF":"MT",
         "MUNICIPIO":"JURUENA",
@@ -7408,6 +8306,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10346,
         "MINA":"DISKBASE",
         "UF":"SP",
         "MUNICIPIO":"ALAMBARI",
@@ -7416,6 +8315,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10347,
         "MINA":"DISKBASE",
         "UF":"SP",
         "MUNICIPIO":"ALAMBARI",
@@ -7424,6 +8324,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10348,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7432,6 +8333,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10349,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7440,6 +8342,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10350,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7448,6 +8351,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10351,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7456,6 +8360,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10352,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7464,6 +8369,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10353,
         "MINA":"Nome da mina não informado",
         "UF":"AP",
         "MUNICIPIO":"SERRA DO NAVIO",
@@ -7472,6 +8378,7 @@
         "RISCO":"Alta"
     },
     {
+        "ID":10354,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"POCONÉ",
@@ -7480,6 +8387,7 @@
         "RISCO":"Média"
     },
     {
+        "ID":10356,
         "MINA":"Nome da mina não informado",
         "UF":"MT",
         "MUNICIPIO":"NOSSA SENHORA DO LIVRAMENTO",
@@ -7488,6 +8396,7 @@
         "RISCO":"Baixa"
     },
     {
+        "ID":10357,
         "MINA":"Mineração Santa Cruz",
         "UF":"MG",
         "MUNICIPIO":"OURO PRETO",
@@ -7495,7 +8404,7 @@
         "LONGITUDE":"-43°40'27.770''",
         "RISCO":"Alta"
     }
-];
+]
             
             // Converte coordenadas DMS para decimais
             allDamsData = mockData.map(dam => {
@@ -7551,10 +8460,11 @@
                 ).addTo(map);
                 
                 marker.bindPopup(`
-                    <b>${dam.MINA}</b><br>
-                    <b>${dam.MUNICIPIO} - ${dam.UF}</b><br>
-                    Risco: ${dam.RISCO}<br>
-                    Coordenadas: ${dam.LATITUDE}, ${dam.LONGITUDE}
+                    <b>ID da Agência Nacional de Mineração:</b>${dam.ID}<br>
+                    <b>Nome da Mina:</b> ${dam.MINA}<br>
+                    <b>Município - UF:</b>${dam.MUNICIPIO} - ${dam.UF}<br>
+                    <b>Risco:</b> ${dam.RISCO}<br>
+                    <b>Coordenadas:</b> ${dam.LATITUDE}, ${dam.LONGITUDE}
                 `);
                 
                 markers.push(marker);
