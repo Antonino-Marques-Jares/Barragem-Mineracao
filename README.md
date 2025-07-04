@@ -14,16 +14,16 @@ Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Sat
 - Pode visualizar no Browser.
 
 **Fonte:**
+[Informações das Barragens](https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao)
 
-**Informações das Barragens:** https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao
-
-**Informação atualizada em :** 19/06/2025
+**Informação atualizada em :** 
+19/06/2025
 
 **Autor:** 
 Antonino Marques Jares
 
 # Site de divulgação :
-https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/
+[Mapa de Barragens no Brasil](https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/)
 
 
 
