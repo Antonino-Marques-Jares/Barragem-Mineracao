@@ -14,7 +14,9 @@ Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Sat
 - Pode visualizar no Browser.
 
 **Fonte:**
+
 [![Dados Abertos](govbr.webp)](https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao)
+
 **Informação atualizada em :** 
 19/06/2025
 
