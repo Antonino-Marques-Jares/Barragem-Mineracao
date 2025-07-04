@@ -23,7 +23,7 @@ Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Sat
 Antonino Marques Jares
 
 # Site de divulgação :
-[Mapa de Barragens no Brasil](https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/)
+[Área de Trampo - Mapa de Barragens no Brasil](https://www.areadetrampo.com.br/barragens-de-mineracao-no-brasil/)
 
 
 
