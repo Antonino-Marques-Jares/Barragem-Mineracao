@@ -7,7 +7,7 @@ Serão apresentadas em cores diferenciadas pelo tipo de risco (Baixa, Média e A
 Poderemos filtrar por Estado e temos três tipos de visualização do Mapa ( Satélite , OpenStreetMap e Relevo)
 
 # Passos :
-- Baixar arquivo Barragens.csv de https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao.
+- Baixar arquivo [Barragens.csv](https://dados.gov.br/dados/conjuntos-dados/barragens-de-mineracao).
 - Atualizar o endereço onde salvou o projeto na variável **url** em barragens.ipynb (arquivo jupyter).
 - Executar todo o código o que cria Resumo.csv e minas.json convertendo geolocalização DMS (ex: -04°31'24.900") para graus decimais (float) pela função dms_to_float().
 - Após executar tudo atualize o html com o json gerado.
